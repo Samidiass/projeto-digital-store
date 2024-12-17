@@ -46,14 +46,13 @@ const ThemeContext= createContext(imagensContexto);
 
 
 const ContextoImagens = (children) => {
-    const = [imgContext, setImgContext] = useState
+    const [imgContext, setImgContext] = useState (imagensContexto)
     return (
     <>
         <ThemeContext.Provider value={{imgContext, setImgContext}}>
          {children}
         </ThemeContext.Provider>
-    </>
-
+   </>
 )
 
 }
